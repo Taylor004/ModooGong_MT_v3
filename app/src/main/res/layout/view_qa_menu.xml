@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/common_row_height_s"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/itemPaddingDefault"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textMedium"
+            android:textColor="@drawable/qa_menu_item_text_color" />
+
+        <TextView
+            android:id="@+id/txtTitleSub"
+            style="@style/textSmall"
+            android:textColor="@drawable/qa_menu_item_text_color" />
+
+        <TextView
+            android:id="@+id/txtValue"
+            style="@style/textMedium"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:src="@drawable/ic_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#ffca00</color>
+    <color name="colorPrimaryDark">#f19f00</color>
+    <color name="colorAccent">#ffca00</color>
+    <color name="background">@color/background_material_light</color>
+-->
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#353b56</color>
+    <color name="background">@color/background_material_light</color>
+    <color name="color_ic_rank_down">#F9225E</color>
+    <color name="color_ic_rank_up">#00E752</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_90">#90000000</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="text_hint">#50000000</color>
+
+    <color name="color_gray_300">#E0E0E0</color>
+    <color name="color_gray_400">#BDBDBD</color>
+    <color name="color_gray">#9E9E9E</color>
+    <color name="color_gray2">#666666</color>
+    <color name="color_gray3">#555555</color>
+    <color name="color_gray4">#C6C6C6</color>
+    <color name="line_color_white">#5cffffff</color>
+    <color name="line_color_black">#10000000</color>
+
+    <color name="color_red">#EE382F</color>
+    <color name="color_black">#2D2D2D</color>
+    <color name="color_green">#00ff00</color>
+
+    <color name="item_selected_color">#10ffca00</color>
+
+    <color name="black_80">#80000000</color>
+    <color name="black_10">#10000000</color>
+    <color name="white_50">#50ffffff</color>
+
+    <!--<color name="colorPrimary_80">#80ffca00</color>-->
+    <color name="colorPrimary_80">#00ff00</color>
+
+
+    <color name="item_text_color">@color/black_overlay</color>
+    <color name="item_text_color_gray">#969696</color>
+
+    <!--주간 학습 리포트 배경 색상-->
+    <color name="Statis_BackGround_Color_black">#121212</color>
+
+    <!--주간 학습 리포트 오늘 수강 시간 프로그래스 배경 바 색상-->
+    <color name="Statis_today_leture_time_background_progress_color">#f5f6f7</color>
+    <!--주간 학습 리포트의 일일 수강시간 오늘 수강시간 총 시간 색상-->
+    <color name="Statis_today_lecture_text_colorGreen_80">#00E752</color>
+
+    <!--7일간 프로그레스 바 색상-->
+    <color name="large_progress_background_color_blue">#052C77</color>
+    <color name="large_progress_start_color_blue">#0058FF</color>
+    <color name="large_progree_end_color_blue">#007FFF</color>
+
+    <color name="midium_progress_background_color_green">#02802B</color>
+    <color name="midium_progress_start_color_green">#00D746</color>
+    <color name="midium_progree_end_color_green">#00F04C</color>
+
+    <color name="small_progress_background_color_yellow">#935C00</color>
+    <color name="small_progress_start_color_yellow">#FF9F00</color>
+    <color name="small_progree_end_color_yellow">#FFCA46</color>
+
+</resources>

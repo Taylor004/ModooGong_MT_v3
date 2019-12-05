@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- API -->
+    <string name="develop_base_url">https://t-api.%1$s</string>
+    <string name="release_base_url">https://api.%1$s</string>
+    <string name="base_file_url">https://file.%1$s</string>
+    <string name="base_free_play_url">http://v.kr.kollus.com/i/</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_row_height_s" />
+
+
+
+        <LinearLayout
+            android:id="@+id/filterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/filterCourseList"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:entries="@array/menu_icon" />
+
+            <Spinner
+                android:id="@+id/filterTeacherList"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:entries="@array/menu_icon" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_size"
+            android:layout_gravity="bottom"
+            android:background="@color/line_color_black"
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/layoutDefaultING"
+                    layout="@layout/content_lecture_default"
+                    android:visibility="gone"/>
+
+                <include
+                    android:id="@+id/layoutDefaultEND"
+                    layout="@layout/content_lecture_end_default"
+                    android:visibility="gone"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerLecture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+    <kr.co.bravecompany.modoogong.android.stdapp.view.AnimatedExpandableListView
+        android:id="@+id/elvLecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:childIndicator="@null"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="@color/black_overlay_90"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_floating_btn" android:visibility="gone" />
+
+         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/openLectureSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="visible"
+            app:elevation="12dp"
+            android:src="@drawable/ic_32_white_plus" />
+
+    </LinearLayout>
+
+</FrameLayout>

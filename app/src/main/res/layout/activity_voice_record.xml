@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="kr.co.bravecompany.modoogong.android.stdapp.activity.VoiceRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/voice_record_height"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:background="?android:colorBackground">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/common_icon_size"
+            android:layout_height="@dimen/common_icon_size"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:layout_marginLeft="@dimen/common_margin_medium"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_close_gray" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            style="@style/textMedium"
+            android:textColor="@color/color_gray"
+            android:text="@string/voice_record_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/layoutRecordPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <kr.co.bravecompany.modoogong.android.stdapp.view.CustomCircularProgressBar
+                    android:id="@+id/progressRecord"
+                    android:layout_width="@dimen/voice_record_progressbar_size"
+                    android:layout_height="@dimen/voice_record_progressbar_size"
+                    android:layout_gravity="center"
+                    app:background_progressbar_color="@color/color_gray_400"
+                    app:background_progressbar_width="@dimen/voice_record_progressbar_width"
+                    app:progressbar_color="@color/color_red"
+                    app:progressbar_width="@dimen/common_progressbar_width" />
+
+                <ImageView
+                    android:id="@+id/btnDoRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_record"/>
+                <ImageView
+                    android:id="@+id/btnStop"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_record_finish"/>
+                <ImageView
+                    android:id="@+id/btnPlay"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/layoutRecordPlay"
+                android:src="@drawable/record_icon"/>
+
+            <TextView
+                android:id="@+id/btnFinish"
+                style="@style/borderDefault"
+                android:minWidth="@dimen/voice_record_finish_width"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/layoutRecordPlay"
+                android:textColor="@color/white"
+                android:text="@string/voice_record_finish"
+                android:background="@drawable/btn_record_finish" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

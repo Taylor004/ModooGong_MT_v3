@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/common_row_height_s"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/itemPaddingDefault">
+        <TextView
+            android:id="@+id/txtLectureType"
+            style="@style/textMedium"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/lecture_menu_item_text_color"/>
+
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_correct"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+</FrameLayout>

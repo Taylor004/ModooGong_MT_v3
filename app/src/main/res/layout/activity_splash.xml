@@ -1,0 +1,76 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kr.co.bravecompany.modoogong.android.stdapp.activity.SplashActivity"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_noti_1024x1024_black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black_80"
+            style="@style/textSmall"
+            android:text="@string/splash_lte_warning"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black_80"
+            style="@style/textSmall"
+            android:text="@string/splash_copyright" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_default_top_margin"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading"/>
+
+        <TextView
+            android:id="@+id/txtCheckLibrary"
+            style="@style/textMedium"
+            android:layout_marginTop="@dimen/common_margin_small"
+            android:textColor="@color/color_gray" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_default_margin"
+            android:textColor="@color/text_hint"
+            android:textSize="8sp"
+            android:textScaleX="0.8"
+            android:includeFontPadding="false"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

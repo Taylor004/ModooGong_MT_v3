@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.sonarqube'
+apply plugin: 'jacoco-android'
+apply from: '../sonarqube.gradle'
+
+def VERSION_NAME = "1.0.0"
+def APK_NAME = "api"
+
+ext.set('VERSION_NAME', VERSION_NAME)
+ext.set('APK_NAME', APK_NAME)
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName VERSION_NAME
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled false
+        }
+        release {
+            testCoverageEnabled false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    api 'com.squareup.okhttp3:okhttp:3.4.2'
+    api 'com.squareup.okhttp3:okhttp-urlconnection:3.4.2'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+   // implementation 'org.codehaus.groovy:groovy-all:2.4.4'
+}
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'org.codehaus.groovy:groovy-all:2.4.15'
+//    }
+//}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.codehaus.groovy:groovy-all:2.4.4'
+    }
+}

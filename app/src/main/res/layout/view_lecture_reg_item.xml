@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subscribeLayoutItem"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkSelected"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/checkbox_subscribe_lecture"
+            android:button="@null"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/subscribedMark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_disabled_checkbox"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        style="@style/itemPaddingDefault"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTeacherName"
+                style="@style/borderDefault"
+                android:background="@drawable/square_basic"
+                android:text="test"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txtSaleType"
+                style="@style/borderDefault"
+                android:layout_marginLeft="@dimen/common_margin_micro"
+                android:text="test"
+                android:background="@drawable/square_basic"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLectureName"
+            style="@style/textMedium"
+            android:text="[한국사 능력검정]도끼한국사 한능검 중급 단기 완성"
+            android:layout_marginTop="@dimen/common_margin_small_s" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtLectureDetail"-->
+<!--            style="@style/textMicro"-->
+<!--            android:textColor="@color/color_gray"-->
+<!--            android:text="[한국사 능력검정]도끼한국사 한능검 중급 단기 완성"-->
+<!--            android:layout_marginTop="@dimen/common_margin_small_s" />-->
+
+
+    </LinearLayout>
+
+    <!--이미지 수정[2019.10.21 테일러]-->
+    <ImageView
+        android:id="@+id/goLinkLectureDetail"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_list_link"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+</FrameLayout>

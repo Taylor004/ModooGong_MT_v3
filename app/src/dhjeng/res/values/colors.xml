@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5ca1c</color>
+    <color name="colorPrimaryDark">#b79300</color>
+    <color name="colorAccent">#f5ca1c</color>
+    <color name="background">@color/background_material_light</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_90">#90000000</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="text_hint">#50000000</color>
+
+    <color name="color_gray_300">#E0E0E0</color>
+    <color name="color_gray_400">#BDBDBD</color>
+    <color name="color_gray">#9E9E9E</color>
+
+    <color name="line_color_white">#5cffffff</color>
+    <color name="line_color_black">#10000000</color>
+
+    <color name="color_red">#EE382F</color>
+    <color name="color_black">#2D2D2D</color>
+
+    <color name="item_selected_color">#10f5ca1c</color>
+
+    <color name="black_80">#80000000</color>
+    <color name="black_10">#10000000</color>
+    <color name="white_50">#50ffffff</color>
+
+    <color name="colorPrimary_80">#80f5ca1c</color>
+
+    <color name="item_text_color">@color/black_overlay</color>
+    <color name="item_text_color_gray">#969696</color>
+
+</resources>

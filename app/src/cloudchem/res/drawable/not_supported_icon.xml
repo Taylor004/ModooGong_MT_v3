@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            android:useLevel="false">
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_priority_high_white_24dp"
+        android:top="@dimen/common_margin_small_s"
+        android:bottom="@dimen/common_margin_small_s"
+        android:left="@dimen/common_margin_small_s"
+        android:right="@dimen/common_margin_small_s"/>
+</layer-list>

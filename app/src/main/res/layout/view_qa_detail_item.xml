@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_margin_medium"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtType"
+                android:minWidth="@dimen/qa_type_width"
+                style="@style/borderDefault"
+                android:layout_centerVertical="true"
+                android:background="@drawable/border_gray"
+                android:textColor="@color/color_gray" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                style="@style/textSmall"
+                android:layout_marginLeft="@dimen/common_margin_small_s"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txtType"
+                android:textColor="@color/color_gray" />
+
+            <TextView
+                android:id="@+id/txtState"
+                style="@style/textSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textMedium"
+            android:layout_marginTop="@dimen/common_margin_small_s"
+            android:lineSpacingExtra="@dimen/common_line_spacing"/>
+
+        <FrameLayout
+            android:id="@+id/layoutSubList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:padding="@dimen/common_margin_medium_s"
+            android:background="@drawable/qa_detail_lecture_bg"
+            android:visibility="gone">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerQADetailSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_micro_s_minus"/>
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/webContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:scrollbars="none" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerQADetailAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_small"/>
+
+    </LinearLayout>
+
+</FrameLayout>

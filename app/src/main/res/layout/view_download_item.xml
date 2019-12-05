@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_item_bg"
+    android:id="@+id/layoutItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/itemPaddingDefault"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLectureName"
+                style="@style/textSmall"
+                android:textColor="@color/color_gray"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/txtStudyName"
+                style="@style/textMedium"
+                android:layout_marginTop="@dimen/common_margin_micro"
+                android:ellipsize="end"
+                android:singleLine="true"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_micro">
+
+                <LinearLayout
+                    android:id="@+id/downStateDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/txtPercent"
+                        style="@style/textSmall"
+                        android:minWidth="@dimen/download_percent_width"/>
+
+                    <kr.co.bravecompany.modoogong.android.stdapp.view.CustomProgressBar
+                        android:id="@+id/progressPercent"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/common_progressbar_width_s"
+                        android:maxHeight="@dimen/common_progressbar_width_s"
+                        android:layout_marginLeft="@dimen/common_margin_micro"
+                        android:progress="0"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/progress_basic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtDownState"
+                    style="@style/textSmall"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnDownPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_micro"
+            android:src="@drawable/btn_download"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+</FrameLayout>

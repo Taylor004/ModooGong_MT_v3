@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/round_background_gray"
+    android:alpha="0.3"
+    android:layout_width="155dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:background="#212121"
+        android:text="어제의 수강 시간" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_gravity="left"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        style="@style/textMedium.bold"
+        android:background="#212121"
+        android:text="4시간 12분" />
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/rank"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@color/black"-->
+<!--            style="@style/textMedium.bold"-->
+<!--            android:text="현재 5등" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/rank_delta_image"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:src="@drawable/ic_32_rank_down"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/rank_delta"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="17dp"-->
+<!--            android:textColor="#F9225E"-->
+<!--            android:textSize="14dp"-->
+<!--            android:text="4"/>-->
+
+<!--    </LinearLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/prog_1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:style="solid_line"
+            app:progress_stroke_width="10dp"
+            app:progress_start_degree="-90"
+            app:mlpb_progress_text_visibility="invisible"
+            app:progress_start_color="@color/large_progress_start_color_blue"
+            app:progress_end_color="@color/large_progree_end_color_blue"
+            app:progress_stroke_cap="round"
+            app:progress_text_color="@color/color_gray2"
+            app:progress_background_color="@color/color_gray"/>
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/prog_2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:style="solid_line"
+            app:progress_stroke_width="10dp"
+            app:progress_start_degree="-90"
+            app:mlpb_progress_text_visibility="invisible"
+            app:progress_start_color="@color/midium_progress_start_color_green"
+            app:progress_end_color="@color/midium_progree_end_color_green"
+            app:progress_stroke_cap="round"
+            app:progress_text_color="@color/color_gray2"
+            app:progress_background_color="@color/color_gray"/>
+
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/prog_3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            app:style="solid_line"
+            app:progress_stroke_width="10dp"
+            app:progress_start_degree="-90"
+            app:mlpb_progress_text_visibility="invisible"
+            app:progress_start_color="@color/small_progress_start_color_yellow"
+            app:progress_end_color="@color/small_progree_end_color_yellow"
+            app:progress_stroke_cap="round"
+            app:progress_text_color="@color/color_gray2"
+            app:progress_text_size="0dp"
+            app:progress_background_color="@color/color_gray"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_row_height_s"
+    android:layout_margin="@dimen/common_margin_small"
+    android:paddingLeft="@dimen/common_margin_small"
+    android:paddingRight="@dimen/common_margin_small"
+    android:orientation="horizontal"
+    android:background="@drawable/qa_detail_player_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_voice_play" />
+
+        <kr.co.bravecompany.modoogong.android.stdapp.view.CustomProgressBar
+            android:id="@+id/progressPlay"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/common_progressbar_width_s"
+            android:maxHeight="@dimen/common_progressbar_width_s"
+            android:layout_marginLeft="@dimen/common_margin_micro"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_black" />
+
+        <TextView
+            android:id="@+id/txtPlay"
+            style="@style/textSmall"
+            android:layout_marginLeft="@dimen/common_margin_micro"
+            android:textColor="@color/color_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="@dimen/common_line_size"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_margin_small"
+            android:background="@color/line_color_black"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            style="@style/textSmall"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_gray"
+            android:ellipsize="middle"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

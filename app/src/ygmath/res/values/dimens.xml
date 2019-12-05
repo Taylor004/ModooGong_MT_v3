@@ -1,0 +1,110 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_view_width">225dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Common-->
+    <dimen name="common_margin">20dp</dimen>
+    <dimen name="common_margin_medium">16dp</dimen>
+    <dimen name="common_margin_medium_s">13dp</dimen>
+    <dimen name="common_margin_small">10dp</dimen>
+    <dimen name="common_margin_small_s">7dp</dimen>
+    <dimen name="common_margin_micro">5dp</dimen>
+    <dimen name="common_margin_micro_s">3dp</dimen>
+    <dimen name="common_margin_micro_ss">1dp</dimen>
+    <dimen name="common_row_height">56dp</dimen>
+    <dimen name="common_row_height_s">44dp</dimen>
+    <dimen name="common_margin_micro_s_minus">-3dp</dimen>
+
+    <dimen name="common_line_spacing">3dp</dimen>
+    <dimen name="common_icon_size_s">18dp</dimen>
+    <dimen name="common_icon_size">24dp</dimen>
+    <dimen name="common_icon_size_b">36dp</dimen>
+    <dimen name="common_target_size">48dp</dimen>
+    <dimen name="common_line_size_s">0.5dp</dimen>
+    <dimen name="common_line_size">1dp</dimen>
+    <dimen name="common_header_line_size">2dp</dimen>
+    <dimen name="common_radius_size">1dp</dimen>
+    <dimen name="common_radius_size_b">3dp</dimen>
+
+    <dimen name="common_fab_icon_size">18dp</dimen>
+    <dimen name="common_fab_elevation">3dp</dimen>
+
+    <dimen name="common_progressbar_width">3dp</dimen>
+    <dimen name="common_progressbar_width_s">2dp</dimen>
+    <dimen name="common_seekbar_thumb_size">5dp</dimen>
+    <dimen name="common_seekbar_thumb_size_b">20dp</dimen>
+
+    <dimen name="common_default_margin">50dp</dimen>
+    <dimen name="common_default_top_margin">80dp</dimen>
+    <dimen name="common_default_bottom_margin">130dp</dimen>
+
+    <dimen name="common_card_radius_size">0dp</dimen>
+    <dimen name="common_card_elevation">2dp</dimen>
+    <dimen name="common_card_margin">-3dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_micro">11sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_super_large">20sp</dimen>
+
+    <!-- Login -->
+    <dimen name="common_item_width">210dp</dimen>
+    <dimen name="common_item_height">34dp</dimen>
+    <dimen name="login_regiter_guide_top_margin">100dp</dimen>
+
+    <!-- Navigation View -->
+    <dimen name="nav_top_margin">36dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_right_btn_width">60dp</dimen>
+
+    <!-- No Network -->
+    <dimen name="no_network_go_down_top_margin">40dp</dimen>
+
+    <!-- Lecture -->
+
+    <!-- Study -->
+    <dimen name="study_order_width">48dp</dimen>
+    <dimen name="study_line_spacing">6dp</dimen>
+    <dimen name="free_study_img_height">200dp</dimen>
+
+    <!-- Download -->
+    <dimen name="download_toolbar_title_left_margin">28dp</dimen>
+    <dimen name="download_percent_width">24dp</dimen>
+
+    <!-- Notice -->
+    <dimen name="notice_type_width">48dp</dimen>
+
+    <!-- Setting -->
+    <dimen name="setting_divider_size">12dp</dimen>
+
+    <!-- QA -->
+    <dimen name="qa_play_progressbar_size">200dp</dimen>
+    <dimen name="qa_item_text_width">310dp</dimen>
+    <dimen name="qa_type_width">60dp</dimen>
+    <dimen name="qa_call_btn_radius_size">20dp</dimen>
+
+    <!-- QA Detail -->
+    <dimen name="qa_detail_play_progressbar_size">80dp</dimen>
+
+    <!-- Voice Record -->
+    <dimen name="voice_record_height">225dp</dimen>
+    <dimen name="voice_record_progressbar_width">3dp</dimen>
+    <dimen name="voice_record_progressbar_size">100dp</dimen>
+    <dimen name="voice_record_finish_width">36dp</dimen>
+
+    <!-- Guide -->
+    <dimen name="guide_txt_margin">6dp</dimen>
+    <dimen name="guide_btn_width">140dp</dimen>
+
+    <!-- Play -->
+    <dimen name="play_seekbar_vertical_height">90dp</dimen>
+    <dimen name="play_bookmark_thumbnail_width">135dp</dimen>
+    <dimen name="play_bookmark_thumbnail_height">90dp</dimen>
+    <dimen name="play_bookmark_item_margin">2dp</dimen>
+
+</resources>

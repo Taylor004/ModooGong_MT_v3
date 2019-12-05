@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/btnDown"
+        style="@style/btnToolbar"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_basic_radius"
+        android:text="@string/study_down"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btnSelect"
+        style="@style/btnToolbar"
+        android:background="@drawable/btn_white"
+        android:text="@string/study_select"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btnDoDown"
+        style="@style/btnToolbar"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_red"
+        android:text="@string/study_do_down"/>
+</FrameLayout>

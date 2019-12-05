@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_row_height_s"
+    android:background="@drawable/menu_item_bg"
+    android:id="@+id/layoutMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/itemPaddingHeader"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtNewMenu"
+                style="@style/textMedium"
+                android:drawableRight="@drawable/ic_notice"
+                android:drawablePadding="@dimen/common_margin_micro"/>
+
+            <TextView
+                android:id="@+id/txtMenu"
+                style="@style/textMedium" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

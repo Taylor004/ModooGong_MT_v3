@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "196345879924",
+    "firebase_url": "https://studyapp-fire.firebaseio.com",
+    "project_id": "studyapp-fire",
+    "storage_bucket": "studyapp-fire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196345879924:android:729ea4c446a2c9fcb3e021",
+        "android_client_info": {
+          "package_name": "net.bravecompany.modoofire.android.stdapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196345879924-vk128g4soca4f3f9sf0ol1g33vdgk7hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDOIq7ezCIa8FCTksNacTFvyOpwtuIf24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196345879924-vk128g4soca4f3f9sf0ol1g33vdgk7hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

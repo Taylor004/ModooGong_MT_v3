@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--스크롤시 바텀 네비게이션 숨길때 필요한 NestedScrollView-->
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+                <!--일간 수강 히스토리-->
+                <LinearLayout
+                    android:id="@+id/content_statis_dailyhistory_layout"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/content_statis_daily_history_recyclerView"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <!--오늘의 수강 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/black"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="19dp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:text="일일 수강시간"/>
+
+                </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/content_statis_todaytime_layout"
+                            android:background="@color/black"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="50dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                android:id="@+id/content_statis_todaytime_yesterday_item"
+                                layout="@layout/view_statis_yesterdaytime_item"/>
+
+                            <include
+                                android:id="@+id/content_statis_todaytime_today_item"
+                                layout="@layout/view_statis_todaytime_item"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                <!--주간 과목별 수강시간 차트 -->
+                <include
+                    android:id="@+id/content_statis_weekly_subject_chart"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    layout="@layout/content_statis_weekly_subject_time"/>
+
+
+                <!--과목별 학습 추이-->
+                <include
+                    android:id="@+id/content_statis_subjects_history"
+                    layout="@layout/content_statis_subjects_history"/>
+
+
+                <!--과목별 수강기록 (과목 메달)-->
+                <LinearLayout
+                    android:id="@+id/content_statis_subject_medal_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="19dp"
+                        android:text="과목별 수강 기록"/>
+
+                    <GridView
+                        android:id="@+id/subject_medal_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:numColumns="3"/>
+
+
+                </LinearLayout>
+
+                <!--메달 콜렉션-->
+                <include
+                    layout="@layout/content_statis_medal_collection"/>
+
+            </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.bravecompany.modoogong.android.stdapp.activity.DownloadActivity"
+    android:padding="@dimen/common_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?android:colorBackground">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_row_height"
+                android:minHeight="@dimen/common_row_height"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btnClose"
+                        android:layout_width="@dimen/common_icon_size"
+                        android:layout_height="@dimen/common_icon_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_close"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/btnCancel"
+                        style="@style/textLarge"
+                        android:layout_gravity="center_vertical|left"
+                        android:textColor="@color/white"
+                        android:text="@string/common_cancel"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/textLarge"
+                    android:layout_marginLeft="@dimen/download_toolbar_title_left_margin"
+                    android:textColor="@color/white" />
+
+                <include layout="@layout/content_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_margin_medium"
+                    android:layout_gravity="center_vertical|right" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/view_download_header"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layoutDefault"
+                layout="@layout/content_default"
+                android:visibility="gone"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

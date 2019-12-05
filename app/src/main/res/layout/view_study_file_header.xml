@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/common_row_height"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/itemPaddingDefault"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtType"
+            android:minWidth="@dimen/notice_type_width"
+            style="@style/borderDefault.bold"
+            android:background="@drawable/border_red"
+            android:text="@string/study_file_type_best"
+            android:textColor="@color/color_red" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textMedium.bold"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:textColor="@color/color_red"
+            android:lineSpacingExtra="@dimen/common_line_spacing"
+            android:ellipsize="end"
+            android:maxLines="2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--즐겨찾기때 사용할 체크박스 상태 selector-->
+    <!-- 체크박스 해제상태 -->
+    <item android:drawable="@drawable/ic_32_list_active_star" android:state_checked="true" />
+    <!-- 체크박스 선택상태 -->
+    <item android:drawable="@drawable/ic_32_list_default_star" android:state_checked="false" />
+</selector>

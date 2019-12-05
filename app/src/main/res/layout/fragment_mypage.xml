@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/common_row_height">
+
+                    <!-- 내 얼굴 -->
+                <FrameLayout
+                        android:background="@color/white"
+                        android:id="@+id/mypage_profile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="129dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/mypage_profile_photo"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:src="@drawable/ic_32_profile_image"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="19dp"
+                            app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mypage_profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="0dp"
+                            android:text="김용감"
+                            android:textColor="@color/black"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/mypage_profile_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="10dp"
+                            android:text="미션완료하고 하와이 가즈아 여기는 두줄까지미션완료하고 하와이 가즈아 여기는 두줄까지"
+                            android:textColor="@color/color_gray"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                 <!-- 쿠폰함, 공지사항 -->
+                 <LinearLayout
+                            android:id="@+id/mypage_alarm_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation ="horizontal">
+
+
+             <LinearLayout
+                         android:id="@+id/mypage_coupon_layout"
+                         android:layout_width="match_parent"
+                         android:layout_height="90dp"
+                         android:layout_weight="1"
+                         android:layout_marginVertical="5dp"
+                         android:paddingTop="10dp"
+                         android:orientation="horizontal"
+                         android:background="@color/white">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginLeft="10dp"
+                         android:orientation="vertical">
+
+                            <ImageButton
+                                     android:id="@+id/mypage_coupon_icon"
+                                     android:layout_width="40dp"
+                                     android:layout_height="40dp"
+                                     android:src="@drawable/ic_32_mypage_coupon"
+                                     android:layout_gravity="center"
+                                     android:layout_marginLeft="6dp"
+                                     android:padding="0sp"
+                                     android:background="@color/white"
+                                     android:scaleType="centerInside"/>
+
+                                <FrameLayout
+                                     android:layout_gravity="center"
+                                     android:layout_width="100dp"
+                                     android:layout_height="wrap_content">
+
+                                     <TextView
+                                             android:id="@+id/mypage_coupon_title"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="center"
+                                             android:textColor="#333333"
+                                             android:textSize="15dp"
+                                             android:text="쿠폰함" />
+
+                                     <TextView
+                                             android:id="@+id/mypage_coupon_badge"
+                                             android:layout_width="20dp"
+                                             android:layout_height="20dp"
+                                             android:layout_marginLeft="28dp"
+                                             android:layout_gravity="center"
+                                             android:text="2"
+                                             android:textSize="15dp"
+                                             android:textAlignment="center"
+                                             android:textColor="#00E752" />
+                                </FrameLayout>
+
+                         </LinearLayout>
+
+                     </LinearLayout>
+
+
+                     <View
+                         android:layout_width="@dimen/common_margin_micro_ss"
+                         android:layout_height="wrap_content"/>
+
+
+                     <LinearLayout
+                             android:id="@+id/mypage_noti_layout"
+                             android:layout_width="match_parent"
+                             android:layout_weight="1"
+                             android:layout_height="90dp"
+                             android:layout_marginVertical="5dp"
+                             android:paddingTop="10dp"
+                             android:background="@color/white"
+                             android:orientation="horizontal">
+
+                         <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginLeft="10dp"
+                                 android:orientation="vertical">
+
+                                 <ImageButton
+                                         android:id="@+id/mypage_noti_icon"
+                                         android:layout_width="40dp"
+                                         android:layout_height="40dp"
+                                         android:src="@drawable/ic_32_mypage_alarm"
+                                         android:background="@color/white"
+                                         android:layout_gravity="center"
+                                         android:padding="0sp"
+                                         android:scaleType="centerInside"/>
+
+                                 <FrameLayout
+                                         android:layout_gravity="center"
+                                         android:layout_width="100dp"
+                                         android:layout_height="wrap_content">
+
+                                     <TextView
+                                             android:id="@+id/mypage_noti_title"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             android:layout_gravity="center"
+                                             android:textColor="#333333"
+                                             android:textSize="15dp"
+                                             android:text="공지사항" />
+
+                                     <TextView
+                                             android:id="@+id/mypage_noti_badge"
+                                             android:layout_width="20dp"
+                                             android:layout_height="20dp"
+                                             android:layout_marginLeft="35dp"
+                                             android:layout_gravity="center"
+                                             android:text="3"
+                                             android:textSize="15dp"
+                                             android:textAlignment="center"
+                                             android:textColor="#00E752" />
+                                 </FrameLayout>
+
+                         </LinearLayout>
+
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+                 <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/line_color_white"/>
+
+
+                 <!-- 나의 패스 -->
+                 <LinearLayout
+                     android:id="@+id/mypage_mypass_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ListView
+                         android:id="@+id/mypage_mypass_list"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0"
+                         android:dividerHeight="0px"
+                         android:divider="#ffffff"
+                         android:visibility="visible"/>
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/mypage_menu_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ListView
+                         android:id="@+id/mypage_menu_list"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="0"
+                         android:dividerHeight="5px"
+                         android:divider="#EEEEEE"
+                         android:visibility="visible"/>
+
+                 </LinearLayout>
+
+
+                 <!-- 마이 페이지 메뉴(1:1문의내역,장바구니,FAQ질문,주문/배송 조회, 앱 설정) -->
+                 <Space
+                         android:layout_width="match_parent"
+                         android:layout_height="10dp"
+                         android:background="@color/line_color_white"/>
+
+             </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

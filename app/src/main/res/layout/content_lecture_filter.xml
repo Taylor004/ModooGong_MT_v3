@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/filterPassList"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:entries="@array/menu_icon"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_header_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"/>
+
+
+        <LinearLayout
+            android:id="@+id/sortLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/filterCourseList"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:entries="@array/menu_icon" />
+
+            <Spinner
+                android:id="@+id/filterTeacherList"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:entries="@array/menu_icon" />
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"
+        />
+
+</LinearLayout>

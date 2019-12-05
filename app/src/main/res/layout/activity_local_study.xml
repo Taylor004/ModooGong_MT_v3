@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kr.co.bravecompany.modoogong.android.stdapp.pageLocalStudy.LocalStudyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_row_height"
+                android:minHeight="@dimen/common_row_height"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/btnCancel"
+                    style="@style/textLarge"
+                    android:layout_gravity="center_vertical|left"
+                    android:textColor="@color/white"
+                    android:text="@string/common_cancel"/>
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/textLarge"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white" />
+
+                <include layout="@layout/content_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_margin_medium"
+                    android:layout_gravity="center_vertical|right" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/view_default_header"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <include
+                android:id="@+id/layoutDefault"
+                layout="@layout/content_default"
+                android:visibility="gone"/>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/refreshView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerStudyDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        </FrameLayout>
+
+        <include layout="@layout/content_memory" />
+
+    </LinearLayout>
+
+    <include layout="@layout/content_floating_btn" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

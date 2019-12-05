@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/contentCall"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/itemPaddingDefault"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/textMedium.bold"
+                android:text="@string/one_to_one_qa_call"
+                android:includeFontPadding="false"/>
+            <TextView
+                style="@style/textMedium.bold"
+                android:layout_marginLeft="@dimen/common_margin_micro"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/one_to_one_qa_call_number"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_micro_s">
+            <TextView
+                style="@style/textMicro"
+                android:textColor="@color/color_gray"
+                android:text="@string/one_to_one_qa_call_guider_1"
+                android:includeFontPadding="false"/>
+            <TextView
+                style="@style/textMicro"
+                android:gravity="right"
+                android:textColor="@color/color_gray"
+                android:text="@string/one_to_one_qa_call_guider_2"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textMicro"
+            android:textColor="@color/color_gray"
+            android:text="@string/one_to_one_qa_call_guider_3"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnCall"
+        style="@style/textMedium"
+        android:paddingTop="@dimen/common_margin_micro"
+        android:paddingBottom="@dimen/common_margin_micro"
+        android:paddingLeft="@dimen/common_margin_medium"
+        android:paddingRight="@dimen/common_margin_medium"
+        android:layout_marginRight="@dimen/common_margin_medium"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/one_to_one_qa_call_btn"
+        android:drawableLeft="@drawable/ic_call"
+        android:drawablePadding="@dimen/common_margin_small"
+        android:background="@drawable/btn_call"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="top"
+        android:background="@color/line_color_black"/>
+</FrameLayout>

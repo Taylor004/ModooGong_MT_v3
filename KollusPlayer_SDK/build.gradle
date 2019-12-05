@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+
+artifacts.add("default", file('kollusplayer_sdk-debug_20190822.aar'))
+

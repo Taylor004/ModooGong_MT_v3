@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/headerDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_row_height_s"
+        style="@style/itemPaddingHeader"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_warn_off"/>
+
+        <TextView
+            android:id="@+id/txtDown"
+            style="@style/textSmall"
+            android:layout_marginLeft="@dimen/common_margin_micro" />
+    </LinearLayout>
+
+    <include layout="@layout/content_select_header"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/headerPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_row_height_s"
+        style="@style/itemPaddingHeader"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/color_red"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_error_white_24dp"/>
+
+        <TextView
+            style="@style/textSmall"
+            android:layout_marginLeft="@dimen/common_margin_micro"
+            android:textColor="@color/white"
+            android:text="@string/download_state_guide_pause"/>
+    </LinearLayout>
+
+</FrameLayout>

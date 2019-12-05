@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="216dp"
+    android:layout_height="124dp"
+    android:background="@drawable/round_background_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="216dp"
+        android:layout_height="124dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/today_Lecture_time_count_down_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="오늘의 수강시간"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/todayrank_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                android:text="00등"/>
+
+            <ImageView
+                android:id="@+id/todayrank_up_mark"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/ic_32_rank_up"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/todayrank_down_mark"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/ic_32_rank_down"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/main_todayrank_updown_text"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/color_ic_rank_up"
+                android:textSize="14dp"
+                android:text=""
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/todayrank_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="00 : 00 : 00"
+            android:textColor="@color/color_gray"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

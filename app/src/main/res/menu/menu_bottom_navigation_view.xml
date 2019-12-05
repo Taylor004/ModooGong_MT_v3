@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_lecture_record"
+        android:icon="@drawable/ic_32_navi_on_report"
+        android:title="학습리포트" />
+
+    <item
+        android:id="@+id/navigation_download"
+        android:icon="@drawable/ic_32_navi_on_download"
+        android:title="다운로드" />
+
+    <item
+        android:id="@+id/navigation_my_lecture"
+        android:icon="@drawable/ic_32_navi_on_myclass"
+        android:title="내강의실" />
+
+    <item
+        android:id="@+id/navigation_bravebooks"
+        android:icon="@drawable/ic_32_navi_on_books"
+        android:title="교재구매" />
+
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/ic_32_navi_on_mypage"
+        android:title="마이페이지" />
+
+</menu>

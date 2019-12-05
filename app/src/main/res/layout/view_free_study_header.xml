@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_card_margin"
+        android:layout_marginRight="@dimen/common_card_margin"
+        android:layout_marginTop="-4dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/common_card_radius_size"
+        card_view:cardElevation="@dimen/common_card_elevation"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgThum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/free_study_img_height"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_circle_outline_white_48dp"
+                    android:alpha="0.5"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/common_margin_medium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    style="@style/textLarge.bold"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="@dimen/common_line_spacing"/>
+
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/txtContent"
+                    style="@style/textSmall"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/common_margin_small_s"
+                    android:textColor="@color/color_gray"
+                    android:lineSpacingExtra="@dimen/common_line_spacing"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_size"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color_black"/>
+
+        -->
+
+</FrameLayout>

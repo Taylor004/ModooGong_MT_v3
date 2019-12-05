@@ -1,0 +1,343 @@
+<resources>
+    <string name="app_name">유기적이과수학스쿨 수강앱</string>
+    <string name="name">유기적이과수학스쿨</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Common -->
+    <string name="toast_common_guide_finish">\'뒤로\' 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="common_ok">확인</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_edit">수정</string>
+    <string name="toast_common_network_fail">네트워크 또는 시스템 오류입니다. 네트워크를 확인해주세요.</string>
+    <string name="toast_common_json_fail">일시적인 오류가 발생하였습니다. 잠시 후 다시 시도해 주세요.</string>
+    <string name="toast_common_data_fail">데이터 로딩 또는 업데이트 오류입니다.</string>
+    <string name="toast_common_last">마지막 페이지입니다.</string>
+    <string name="toast_common_dialog_no_list">표시할 항목이 없습니다.</string>
+    <string name="toast_common_network_response_null">항목이 삭제되었거나 일시적인 오류가 발생하였습니다.</string>
+    <string name="toast_common_detail_attach">첨부파일은 PC/모바일 웹사이트에서 확인해주세요.</string>
+    <string name="common_close">닫기</string>
+    <string name="common_no_more">다시보지않기</string>
+    <string name="common_loading">로딩중</string>
+
+    <!-- Splash -->
+    <string name="splash_auto_login_ing">로그인 중</string>
+    <string name="splash_auto_login_fail">로그인 실패</string>
+    <string name="kollus_resource_check">리소스 체크 중</string>
+    <string name="kollus_resource_check_complete">리소스 체크 완료</string>
+    <string name="dialog_kollus_resource_download">필수 라이브러리 개수: %1$d\n총 사이즈: %2$.2fMB</string>
+    <string name="kollus_resource_download_ing">리소스 다운로드 중</string>
+    <string name="kollus_resource_download_ing_progress">리소스 다운로드 중 (%1$d/%2$d) %3$d%%</string>
+    <string name="kollus_resource_download_error">리소스 다운로드 에러</string>
+    <string name="kollus_resource_not_support">미지원 단말</string>
+    <string name="kollus_device_setting_error">디바이스 설정 에러</string>
+    <string name="toast_splash_guide_finish">앱을 종료합니다.</string>
+    <string name="dialog_error_rooting">탈옥된 기기입니다. 앱을 종료합니다.</string>
+    <string name="dialog_app_clear_data">초기 설정을 위해 앱에 저장된 모든 데이터가 지워집니다.</string>
+    <string name="dialog_app_update">앱 업데이트가 필요합니다. 업데이트 후 이용해주세요.</string>
+    <string name="go_google_play_store">구글플레이 스토어</string>
+
+    <!-- Navigation View -->
+    <string name="nav_header_login_name">&#160;님</string>
+    <string name="nav_header_login_dec">오늘도 열공하세요!</string>
+    <string name="nav_header_no_login">로그인 후 강의를\n수강하실 수 있습니다.</string>
+    <string name="toast_no_login">로그인 후 이용 가능합니다.</string>
+    <string name="nav_header_menu_refresh">메뉴를 새로고침 해주세요.</string>
+
+    <string name="menu_study_qa">학습문의</string>
+    <string name="menu_explain_study">해설강의</string>
+
+    <string-array name="menu_icon">
+        <item>내강의실</item>
+        <item>다운로드 보관함</item>
+    </string-array>
+
+    <string-array name="menu_text">
+        <item>공지사항</item>
+        <item>고객센터</item>
+    </string-array>
+
+    <!-- Login -->
+    <string name="login_guide">로그인 후\n강의를 수강하실 수 있습니다.</string>
+    <string name="login_id_hint">아이디</string>
+    <string name="login_pw_hint">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="login_register_guide">아직 회원이 아니시라면\n간편하게 회원가입 후 이용하실 수 있습니다.</string>
+    <string name="login_register">회원가입하기</string>
+    <string name="login_find_account">아이디/비밀번호 찾기</string>
+    <string name="login_find_id">아이디/</string>
+    <string name="login_find_pw">비밀번호 찾기</string>
+    <string name="toast_login_check">아이디와 비밀번호 모두 입력해주세요.</string>
+    <string name="toast_login_error_ei_ep">아이디 또는 비밀번호를 다시 확인해주세요.</string>
+    <string name="toast_login_error_im">등록된 휴대폰이 아닙니다. 최초 로그인하신 기기로만 이용이 가능합니다.\n(내강의실에서 초기화 가능)</string>
+    <string name="toast_login_error_im_mypage">등록된 휴대폰이 아닙니다. 최초 로그인하신 기기로만 이용이 가능합니다.\n(마이페이지에서 초기화 가능)</string>
+    <string name="toast_login_error_default">가입대기/휴면/정지계정입니다.</string>
+    <string name="toast_login_error">다시 로그인해주세요.</string>
+    <string name="login_no_register_guide">* 회원가입은 PC/모바일 웹사이트에서 가능합니다.</string>
+    <string name="login_no_find_account_guide">* 아이디 또는 비밀번호를 잊으신 경우 PC/모바일 웹의 [아이디/비밀번호 찾기] 메뉴를 이용해주세요.</string>
+    <string name="login_device_info">Stdapp Ver %1$s (%2$s; code: %3$d; %4$s %5$s; %6$s %7$s)</string>
+
+    <!-- No Login -->
+    <string name="no_login">로그인 후 이용 가능합니다.</string>
+
+    <!-- No Network -->
+    <string name="no_network">네트워크 연결 오류</string>
+    <string name="no_network_guide">네트워크 연결 상태를 확인해주세요.</string>
+    <string name="no_network_btn">연결재시도</string>
+    <string name="no_network_go_down_guide">네트워크가 연결되어 있지 않은 경우에는\n다운로드 된 강의만 수강하실 수 있습니다.</string>
+    <string name="no_network_go_down">다운로드 보관함</string>
+    <string name="toast_no_network">네트워크에 접속할 수 없습니다.</string>
+
+    <!-- No Menu -->
+    <string name="no_menu_not_open">메뉴 오픈 준비중입니다.</string>
+
+    <!-- Lecture -->
+    <string name="lecture_count">총 %1$d 강좌</string>
+    <string name="lecture_item_detail">%1$s~%2$s | 남은수강일 %3$s일 | 진도상태 %4$d강/%5$d강</string>
+    <string name="lecture_end_item_detail">%1$s~%2$s</string>
+    <string name="no_lecture">수강중인 강좌가 없습니다.</string>
+    <string name="no_lecture_end">수강종료된 강좌가 없습니다.</string>
+    <string name="no_lecture_guide">PC/모바일 웹사이트에서\n상품을 구매한 후 이용해주세요.</string>
+    <string name="toast_lecture_stop">현재 수강정지 중인 강좌입니다.</string>
+    <string name="toast_lecture_prev">현재 수강시작 전인 강좌입니다.</string>
+
+    <string-array name="lecture_menu_text">
+        <item>수강중인 강좌</item>
+        <item>수강종료된 강좌</item>
+    </string-array>
+
+    <!-- Study -->
+    <string name="study_toolbar_title">강의 리스트</string>
+    <string name="study_down">다운로드</string>
+    <string name="study_select">강의선택</string>
+    <string name="study_do_down">다운하기</string>
+    <string name="study_play_guide">강의를 재생하려면 아래 목록을 눌러주세요.</string>
+    <string name="study_play_count">총 %1$d 강</string>
+    <string name="study_select_all">전체선택</string>
+    <string name="study_deselect_all">선택해제</string>
+    <string name="study_select_state">총 %1$d 강 중 &lt;font color=\"black\"&gt;%2$d강 선택&lt;/font&gt;</string>
+    <string name="study_played">최근 재생됨</string>
+    <string name="study_order">%1$s강</string>
+    <string name="study_time">%1$d분</string>
+    <string name="study_down_state_ing">다운로드 | %1$d%%</string>
+    <string name="study_down_state_pending">다운로드 대기중</string>
+    <string name="study_down_state_complete">다운로드 완료</string>
+    <string name="study_down_state_pause">일시정지 | %1$d%%</string>
+    <string name="study_down_state_error">다운로드 에러</string>
+    <string name="study_down_state_prepare">다운로드 준비중</string>
+    <string name="toast_study_down_complete">다운로드 완료된 강의입니다.</string>
+    <string name="toast_study_down_ing">다운로드 중인 강의입니다.</string>
+    <string name="toast_study_down_pending">다운로드 대기중인 강의입니다.</string>
+    <string name="toast_study_down_error">다운로드 에러가 발생한 강의입니다.</string>
+    <string name="toast_study_down_guide">%1$d개의 강의가 다운로드 목록에 추가되었습니다.</string>
+    <string name="toast_study_down_duplicate">다른 강좌에서 이미 다운로드 중이거나 다운로드된 강의입니다.</string>
+    <string name="toast_study_not_upload">업로드 전인 강의입니다.</string>
+    <string name="study_not_open_lecture">현재 강좌 오픈 준비중입니다.</string>
+
+    <!-- Download -->
+    <string name="download_toolbar_title">다운로드중</string>
+    <string name="download_do_delete">삭제하기</string>
+    <string name="download_state_guide">현재 %1$d개의 강의가 다운로드 중입니다.</string>
+    <string name="download_state_guide_pause">다운로드가 일시정지된 강의가 있습니다.</string>
+    <string name="download_state_ing">%1$d%%</string>
+    <string name="download_state_pending">다운로드 대기중</string>
+    <string name="download_state_pause">일시정지됨 | %1$d%%</string>
+    <string name="download_state_error">다운로드 에러</string>
+    <string name="download_state_prepare">다운로드 준비중</string>
+    <string name="download_state_prepare_complete">다운로드 준비완료</string>
+    <string name="download_study_name">%1$s. %2$s</string>
+    <string name="dialog_download_delete_guide">%1$d개의 파일을 삭제하시겠습니까?</string>
+    <string name="dialog_download_exit_guide">다운로드 중인 강의가 있습니다.\n종료하시겠습니까?</string>
+    <string name="dialog_restart_download">다운로드 미완료 영상이 있습니다.\n이어서 받으시겠습니까?</string>
+    <string name="toast_download_error_full_storage">다운로드 저장공간이 부족합니다.\n저장공간을 확보 후 재시도 해 주세요.</string>
+    <string name="no_download">다운로드 중인 강의가 없습니다.</string>
+
+    <!-- Local Lecture -->
+    <string name="local_lecture_item_detail">%1$s~%2$s | 남은수강일 %3$d일</string>
+    <string name="local_lecture_menu_text">다운로드한 모든 상품</string>
+    <string name="local_lecture_memory_guide">사용 가능한 메모리 용량</string>
+    <string name="no_local_lecture">다운로드한 강좌가 없습니다.</string>
+
+    <!-- Local Study -->
+    <string name="local_study_toolbar_title">다운로드 보관함</string>
+    <string name="no_local_study">다운로드 완료된 강의가 없습니다.</string>
+    <string name="toast_local_download_complete">다운로드 완료된 강의가 있습니다. 새로고침 해주세요.</string>
+
+    <!-- Free Lecture -->
+    <string name="no_free_study">무료 강좌를 준비중입니다.</string>
+    <string name="free_study_divider">%1$s 리스트</string>
+    <string name="free_study_view_table">표 보기</string>
+
+    <!-- Free Explain Study -->
+    <string name="no_free_explain_study">해설강의를 준비중입니다.</string>
+
+    <string-array name="free_explain">
+        <item>고3</item>
+        <item>고2</item>
+        <item>고1</item>
+    </string-array>
+
+    <!-- Notice -->
+    <string name="notice_type_first">필&#160;&#160;독</string>
+    <string name="notice_type_event">이벤트</string>
+    <string name="notice_type_notice">공&#160;&#160;지</string>
+    <string name="notice_detail_toolbar_title">공지사항</string>
+    <string name="notice_downloading">다운로드 중</string>
+    <string name="no_notice">공지사항이 없습니다.</string>
+
+    <!-- Setting -->
+    <string name="setting_toolbar_title">설정</string>
+    <string name="setting_memory_default">-</string>
+
+    <!--<string-array name="setting_switch">-->
+        <!--<item>3G/LTE 사용 시 알림</item>-->
+        <!--<item>자동 이어보기</item>-->
+        <!--<item>푸시 알림 받기</item>-->
+        <!--<item>SW 코덱 우선</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="setting_text">-->
+        <!--<item>디바이스 전체 용량</item>-->
+        <!--<item>남은 용량</item>-->
+        <!--<item>강의 다운받은 용량</item>-->
+    <!--</string-array>-->
+
+    <string name="setting_logout">로그아웃</string>
+    <string name="setting_version">V&#160;%1$s</string>
+    <string name="dialog_no_wifi_download">이동통신망(3G/LTE 등)으로 접속 시 데이터 통화료가 발생할 수 있습니다.</string>
+    <string name="dialog_no_wifi_play">이동통신망(3G/LTE 등)으로 접속 시 데이터 통화료가 발생할 수 있습니다.</string>
+    <string name="dialog_logout">로그아웃 시 앱에 저장된 모든 데이터가 지워집니다. 로그아웃하시겠습니까?</string>
+
+    <!-- Study QA -->
+    <string-array name="study_qa_title">
+        <item>학습문의하기</item>
+        <item>학습문의내역</item>
+    </string-array>
+
+    <string name="qa_title_hint">제목을 입력하여 주세요</string>
+    <string name="qa_content_hint">문의하실 내용을 입력하여 주세요</string>
+
+    <string-array name="study_qa_menu">
+        <item>강좌</item>
+    </string-array>
+    <string-array name="study_qa_menu_book">
+        <item>교재</item>
+        <item>페이지</item>
+    </string-array>
+    <string name="study_qa_menu_lecture">강좌</string>
+    <string name="study_qa_menu_lecture_name">강좌명</string>
+    <string name="study_qa_menu_type">질문유형</string>
+    <string name="study_qa_menu_subject">과목</string>
+    <string name="study_qa_menu_teacher">교수명</string>
+    <string name="study_qa_menu_book">교재</string>
+    <string name="study_qa_menu_book_name">교재명</string>
+    <string name="study_qa_menu_book_page">페이지</string>
+    <string name="study_qa_menu_book_page_hint">교재 페이지를 입력해주세요</string>
+    <string name="study_qa_menu_select_default">선택</string>
+
+    <string name="qa_menu_sub_title_not_required">(선택항목)</string>
+    <string name="qa_type_default">학습문의</string>
+    <string name="toast_qa_prev_empty">이전 항목을 선택해주세요.</string>
+    <string name="toast_qa_add">첨부파일은 1개만 등록 가능합니다.</string>
+
+    <string-array name="qa_image_type">
+        <item>카메라</item>
+        <item>갤러리</item>
+    </string-array>
+
+    <string name="toast_player_setup_failed">플레이어 로딩을 실패하였습니다.</string>
+    <string name="toast_player_file_setup_failed">%s 파일의 플레이어 로딩을 실패하였습니다.</string>
+    <string name="toast_qa_no_subject">과목을 선택해 주세요.</string>
+    <string name="toast_qa_no_type">질문유형을 선택해 주세요.</string>
+    <string name="toast_qa_no_teacher">교수님을 선택해 주세요.</string>
+    <string name="toast_qa_no_lecture">강좌를 선택해 주세요.</string>
+    <string name="toast_qa_no_book">교재 정보를 입력해 주세요.</string>
+    <string name="toast_qa_no_title_content">제목과 내용을 모두 입력해 주세요.</string>
+    <string name="toast_qa_no_edit">수정된 항목이 없습니다.</string>
+    <string name="toast_qa_dialog_no_lecture_list">수강중인 강좌가 없습니다.</string>
+    <string name="toast_qa_dialog_no_lecture_list_required">수강중인 강좌가 없습니다. 문의를 작성할 수 없습니다.</string>
+    <string name="toast_qa_dialog_no_book_list">판매중인 교재가 없습니다.</string>
+    <string name="toast_qa_check_camera">카메라 기능이 지원되지 않는 디바이스입니다.</string>
+    <string name="toast_qa_check_mic">마이크 기능이 지원되지 않는 디바이스입니다.</string>
+    <string name="toast_qa_check_telephony">전화 기능이 지원되지 않는 디바이스입니다.</string>
+    <string name="toast_qa_guide_landscape">가로화면에서는 입력항목을 스크롤해주세요.</string>
+
+    <!-- Voice Record -->
+    <string name="voice_record_title">버튼을 눌러 녹음을 시작하세요</string>
+    <string name="voice_record_finish">완료</string>
+    <string name="toast_check_external_storage">외부저장소 상태를 확인해주세요.</string>
+    <string name="toast_voice_setup_failed">리코더 로딩을 실패하였습니다.</string>
+
+    <!-- QA List -->
+    <string-array name="qa_state_type">
+        <item>접수중</item>
+        <item>답변완료</item>
+    </string-array>
+    <string name="no_study_qa">학습문의내역이 없습니다.</string>
+    <string name="no_one_to_one_qa">1:1문의내역이 없습니다.</string>
+
+    <!-- QA Detail -->
+    <string name="study_qa_detail_toolbar_title">학습문의내역</string>
+    <string name="study_qa_detail_answer">답변</string>
+    <string name="toast_qa_upload_file_max_size">첨부파일은 최대 3MB 까지 가능합니다.</string>
+    <string name="toast_qa_file_not_supported">지원되지 않는 첨부파일입니다. 웹페이지에서 확인해주세요.</string>
+    <string name="toast_qa_player_setup_failed">지원되지 않는 음성답변입니다. 웹페이지에서 확인해주세요.</string>
+    <string name="toast_qa_upload_failed">업로드를 실패하였습니다.</string>
+    <string name="dialog_qa_edit">앱에서 수정 시 작성된 내용은 유지되나, 글꼴 등의 편집효과와 이미지 등의 첨부내용이 모두 사라지게 됩니다.\n수정하시겠습니까?</string>
+    <string name="qa_detail_attach_voice">음성첨부</string>
+    <string name="qa_detail_attach_reply_voice">음성답변</string>
+    <string name="study_qa_detail_sub">&#183;%1$s :</string>
+
+    <!-- 1:1 QA -->
+    <string-array name="one_to_one_qa_title">
+        <item>1:1 문의하기</item>
+        <item>1:1 문의내역</item>
+    </string-array>
+
+    <string-array name="one_to_one_qa_menu">
+        <item>질문유형</item>
+    </string-array>
+
+    <string name="one_to_one_qa_detail_toolbar_title">1:1 문의내역</string>
+
+    <string name="one_to_one_qa_call">전화문의</string>
+    <string name="one_to_one_qa_call_number">1661-9577</string>
+    <string name="one_to_one_qa_call_guider_1">평일</string>
+    <string name="one_to_one_qa_call_guider_2">(월~목) AM 10:00~PM 07:30\n(금) AM 10:00~PM 05:00</string>
+    <string name="one_to_one_qa_call_guider_3">점심시간 PM 12:30~PM 01:30</string>
+    <string name="one_to_one_qa_call_btn">전화걸기</string>
+    <string name="one_to_one_qa_call_uri">tel:1661-9577</string>
+
+    <!-- Kollus -->
+    <string name="toast_kollus_guide_finish">\'뒤로\' 버튼을 한번 더 누르면 재생이 종료됩니다.</string>
+
+    <!-- Check Permission -->
+    <string name="check_permission_denied_msg">\'%1$s\' 기능을 사용하기 위해 권한이 필요합니다.\n[설정] > [%2$s] > [권한] 에서 해당 권한을 활성화해주세요.</string>
+    <string name="check_permission_record_audio">마이크</string>
+    <string name="check_permission_call_phone">전화</string>
+    <string name="check_permission_external_storage">저장</string>
+    <string name="dialog_check_permission_external_storage">사진, 미디어, 파일 사용에 필요한 \'저장\' 권한 활성을 꼭 유지해주세요.\n(권한 비활성화 시 앱이 정상동작하지 않을 수 있습니다.)</string>
+    <string name="check_system_permission_denied_msg">\'%1$s\' 기능을 사용하기 위해 권한이 필요합니다.\n[설정] > [시스템 설정 수정] 에서 해당 권한을 활성화해주세요.</string>
+    <string name="check_system_permission_brightness">시스템 설정 쓰기(밝기 조절)</string>
+    <string name="check_system_permission_positive">설정</string>
+    <string name="check_system_permission_negative">닫기</string>
+
+    <!-- API -->
+    <string name="base_web_url">http://www.%1$s</string>
+    <string name="web_login_find_info_url">/member/info_search.php</string>
+    <string name="web_join_url">/member/join_step1.php</string>
+
+    <string name="base_mobile_web_url">http://m.%1$s</string>
+    <string name="login_find_id_url">/member/find_id.php</string>
+    <string name="login_find_pw_url">/member/find_pw.php</string>
+    <string name="join_url">/member/join1.php</string>
+
+    <string name="base_modoo_url">&amp;ret_url=http%%3A//www.%1$s</string>
+    <string name="modoo_login_find_id_url">http://member.bravecompany.net/search.htm\?typ=id</string>
+    <string name="modoo_login_find_pw_url">http://member.bravecompany.net/search.htm\?typ=pw</string>
+    <string name="modoo_join_url">http://member.bravecompany.net/join.htm\?</string>
+
+    <string name="google_play_store_url">https://play.google.com/store/apps/details?id=%1$s</string>
+
+</resources>

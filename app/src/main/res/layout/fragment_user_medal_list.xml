@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/filterUserMedal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:entries="@array/filter_user_medal"/>
+
+            <TextView
+                android:id="@+id/moreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20dp"
+                android:textSize="15dp"
+                android:textColor="@color/color_gray"
+                android:text="더 보기"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userMedalCircleImageView1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center|left"
+                android:background="@drawable/gray_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/weeklyUserMedalTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="13dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="10월 4주차"/>
+
+            <TextView
+                android:id="@+id/weeklyTotalTimeTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="20dp"
+                android:text="12:33:22"
+                android:textColor="@color/color_gray"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userMedalCircleImageView2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/weeklyUserMedalTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="10월 3주차"/>
+
+            <TextView
+                android:id="@+id/weeklyTotalTimeTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="12:33:22"
+                android:textColor="@color/color_gray"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userMedalCircleImageView3"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="right"
+                android:background="@drawable/gray_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/weeklyUserMedalTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="13dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="10월 2주차"/>
+
+            <TextView
+                android:id="@+id/weeklyTotalTimeTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="12:33:22"
+                android:textColor="@color/color_gray"/>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+{
+  "resultCode" : 1,
+
+  "queryDate" : "2019-11-23T18:25:43.511Z",
+  "subjectList" : [
+    {
+      "subjCD" : "1",
+      "subjNM" : "국어",
+      "view" : 10,
+      "weeklyView" : 1
+    },
+
+    {
+      "subjCD" : "2",
+      "subjNM" : "영어",
+      "view" : 20,
+      "weeklyView" : 3
+    },
+
+    {
+      "subjCD" : "3",
+      "subjNM" : "한국사",
+      "view" : 20,
+      "weeklyView" : 3
+    },
+
+    {
+      "subjCD" : "5",
+      "subjNM" : "행정법",
+      "view" : 20,
+      "weeklyView" : 3
+    },
+
+    {
+      "subjCD" : "6",
+      "subjNM" : "사회",
+      "view" : 1,
+      "weeklyView" : 3
+    },
+
+    {
+      "subjCD" : "9",
+      "subjNM" : "형법",
+      "view" : 0,
+      "weeklyView" : 3
+    }
+
+  ]
+}

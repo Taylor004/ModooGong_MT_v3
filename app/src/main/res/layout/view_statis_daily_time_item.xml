@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_gravity="center"
+        android:layout_width="16dp"
+        android:layout_height="16dp">
+
+        <ImageView
+            android:id="@+id/white_round_daily_image"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_circle_white_background"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/weekday_text"
+            android:layout_width="8sp"
+            android:layout_height="12sp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_gray"
+            android:textSize="10dp"
+            android:text="월"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <!--큰 원 프로그래스 바-->
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/daily_time_prog_1"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:alpha="1"
+                app:style="solid_line"
+                app:progress_stroke_width="4dp"
+                app:progress_start_degree="-90"
+                app:progress_start_color="@color/large_progress_start_color_blue"
+                app:progress_end_color="@color/large_progree_end_color_blue"
+                app:progress_stroke_cap="round"
+                app:progress_text_color="@color/black"
+                app:progress_text_size="0dp"
+                app:progress_background_color="#052C77" />
+            <!--중간 원 프로그래스 바-->
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/daily_time_prog_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:alpha="0.25"
+                app:style="solid_line"
+                app:progress_stroke_width="5dp"
+                app:progress_start_degree="-90"
+                app:progress_start_color="@color/midium_progress_start_color_green"
+                app:progress_end_color="@color/midium_progree_end_color_green"
+                app:progress_stroke_cap="round"
+                app:progress_text_color="@color/black"
+                app:progress_text_size="0dp"
+                app:progress_background_color="@color/midium_progress_background_color_green"/>
+            <!--작은 원 프로그래스 바-->
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/daily_time_prog_3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:alpha="0.25"
+                app:style="solid_line"
+                app:progress_stroke_width="5dp"
+                app:progress_start_degree="-90"
+                app:progress_start_color="@color/small_progress_start_color_yellow"
+                app:progress_end_color="@color/small_progree_end_color_yellow"
+                app:progress_stroke_cap="round"
+                app:progress_text_color="@color/black"
+                app:progress_text_size="0dp"
+                app:progress_background_color="@color/small_progress_background_color_yellow"/>
+
+
+        </FrameLayout>
+
+
+
+
+</LinearLayout>

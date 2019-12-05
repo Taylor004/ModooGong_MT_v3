@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_margin_small_s"
+    android:paddingTop="@dimen/common_margin_small"
+    android:paddingBottom="@dimen/common_margin_small"
+    android:paddingLeft="@dimen/common_margin_medium_s"
+    android:paddingRight="@dimen/common_margin_medium_s"
+    android:gravity="center_vertical"
+    android:background="@drawable/study_file_detail_attach_bg">
+    <TextView
+        android:id="@+id/txtNo"
+        style="@style/textSmall" />
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/textSmall.bold"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/common_margin_micro"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/btnDown"
+        style="@style/textMicro.bold"
+        android:layout_width="@dimen/study_file_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_small_s"
+        android:padding="@dimen/common_margin_micro"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/color_black"
+        android:text="@string/study_file_detail_down"/>
+</LinearLayout>

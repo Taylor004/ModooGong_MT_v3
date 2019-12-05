@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/nav_top_margin"
+    android:paddingBottom="@dimen/common_margin_medium"
+    android:paddingLeft="@dimen/common_margin_medium"
+    android:paddingRight="@dimen/common_margin_medium"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/SliderView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:sliderAnimationDuration="600"
+            app:sliderCircularHandlerEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="25dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="2dp"
+            app:sliderIndicatorRadius="0.65pt"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true"
+            android:visibility="visible"/>
+
+       <!-- <include
+            layout="@layout/view_exam_schedule_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+        <FrameLayout
+            android:id="@+id/profile_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_32_profile_image"
+                app:civ_border_color="#FF000000"/>
+
+            <Button
+                android:id="@+id/profile_image_editor"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_circle_white_camera"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_margin_medium"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtName"
+                style="@style/textMedium.bold"
+                android:textSize="18dp"
+                android:text="김용감"
+                android:textColor="@color/black"/>
+
+<!--            <TextView-->
+<!--                style="@style/textMedium"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18dp"-->
+<!--                android:text="@string/nav_header_login_name" />-->
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:paddingTop="6dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/todayMessage"
+                style="@style/textMedium"
+                android:layout_width="180dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:textAlignment="center"
+                android:text="@string/nav_header_login_dec1"
+                android:textSize="12dp"
+                android:textColor="@color/color_gray"/>
+
+            <View
+                android:id="@+id/todayMessageDividerID"
+                android:layout_width="130dp"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                android:layout_gravity="bottom|center"/>
+
+
+
+            <Button
+                android:id="@+id/profile_todayMessage_image_editor"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/ic_32_edit_pencil"
+                android:layout_toRightOf="@id/todayMessage" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <TextView
+            style="@style/textSmall"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/nav_header_no_login"
+            android:lineSpacingExtra="@dimen/common_line_spacing"/>
+        <TextView
+            android:id="@+id/btnLogin"
+            style="@style/btnDefault"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/common_margin_medium"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_basic"
+            android:text="@string/login"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMenuRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <TextView
+            style="@style/textSmall"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/nav_header_menu_refresh"
+            android:lineSpacingExtra="@dimen/common_line_spacing"/>
+        <ImageView
+            android:id="@+id/btnMenuRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_micro"
+            android:src="@drawable/ic_refresh_white_36dp"/>
+    </LinearLayout>
+
+</FrameLayout>

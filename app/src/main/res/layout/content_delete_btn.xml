@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btnSelect"
+        style="@style/btnToolbar"
+        android:background="@drawable/btn_white"
+        android:text="@string/study_select"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/btnDoDelete"
+        style="@style/btnToolbar"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_red"
+        android:text="@string/download_do_delete"/>
+
+</FrameLayout>

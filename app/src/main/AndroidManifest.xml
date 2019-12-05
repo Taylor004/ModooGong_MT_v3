@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.co.bravecompany.modoogong.android.stdapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- android:name=".application.ModooGong" -->
+
+    <application
+        android:name=".application.ModooGong"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".activity.LectureSubscribeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:label="@string/title_activity_course_reg"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".pageSetting.SettingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".pageStudy.StudyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DownloadActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.Translucent_NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".pageLocalStudy.LocalStudyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.NoticeDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.VoiceRecordActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.Translucent_NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PhotoViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.QADetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.PlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.WebViewDialogActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.Translucent_NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.GoDownGuideActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.Translucent_NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.StudyFileDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".pageCS.OneToOneCSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <service
+            android:name=".download.DownloadService"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="60b001ebf64460de8c44d74a7b7f56c7a265d1d6" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <service android:name=".application.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default timeBar. This is used when no timeBar is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_noti_white2" /> <!--푸시 노티 아이콘(icon_noti_white2) 크기  및 색상 수정 [2019.10.15 테일러]-->
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_row_height_s">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/itemPaddingHeader"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editQATitle"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                style="@style/editStyle"
+                android:hint="@string/qa_title_hint"
+                android:singleLine="true" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/btnVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_small"
+                android:src="@drawable/voice_icon"/>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/divider"
+                android:layout_width="@dimen/common_line_size"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_margin_small"
+                android:layout_marginTop="@dimen/common_margin_small"
+                android:layout_marginBottom="@dimen/common_margin_small"
+                android:background="@color/line_color_black"/>
+
+            <ImageView
+                android:id="@+id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_small"
+                android:src="@drawable/image_icon"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_size"
+            android:layout_gravity="bottom"
+            android:background="@color/line_color_black"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/editQAContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/common_margin_medium"
+        style="@style/editStyle"
+        android:gravity="top"
+        android:hint="@string/qa_content_hint"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:lineSpacingExtra="@dimen/common_line_spacing"/>
+
+    <include layout="@layout/content_qa_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

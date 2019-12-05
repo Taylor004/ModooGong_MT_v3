@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "590466936676",
+    "firebase_url": "https://studyapp-cop.firebaseio.com",
+    "project_id": "studyapp-cop",
+    "storage_bucket": "studyapp-cop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590466936676:android:ea6541193612647b2f5471",
+        "android_client_info": {
+          "package_name": "net.bravecompany.modoocop.android.stdapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590466936676-7m7gtfhbiodh7551m7kaiuoimuknvns6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZo1PTTYOXW3wdxv5_catDBCKBvIJxGRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590466936676-7m7gtfhbiodh7551m7kaiuoimuknvns6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

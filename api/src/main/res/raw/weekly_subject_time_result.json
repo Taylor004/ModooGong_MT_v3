@@ -1,0 +1,21 @@
+{
+  "resultCode" : 1,
+
+  "date" : "2019-11-23T18:25:43.511Z",
+  "weeklyTime" : 4.0,
+  "subjectList" :
+  [
+    {
+        "subjCD" : "1",
+        "hours" : 10.0
+    },
+    {
+      "subjCD" : "2",
+      "hours" : 20.0
+    },
+    {
+      "subjCD" : "3",
+      "hours" : 30.0
+    }
+  ]
+}

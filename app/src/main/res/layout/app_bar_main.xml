@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kr.co.bravecompany.modoogong.android.stdapp.activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--<com.google.android.material.appbar.CollapsingToolbarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:contentScrim="?attr/colorPrimary"-->
+            <!--app:expandedTitleGravity="top"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_row_height"
+            android:minHeight="@dimen/common_row_height"
+            android:background="@color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/textLarge"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/name"/>
+
+            <TextView
+                android:id="@+id/btnOk"
+                style="@style/btnToolbar"
+                android:layout_marginRight="@dimen/common_margin_medium"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_basic_radius"
+                android:text="@string/common_ok"
+                android:visibility="gone"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/btnLecReg"-->
+<!--                style="@style/btnToolbar"-->
+<!--                android:layout_marginRight="@dimen/common_margin_medium"-->
+<!--                android:layout_gravity="center_vertical|right"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:background="@drawable/btn_basic_radius"-->
+<!--                android:text="강좌신청"-->
+<!--                android:visibility="gone"/>-->
+
+        </androidx.appcompat.widget.Toolbar>
+        <!--</com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        app:itemIconTint="@color/menu_nav_item_text_color"
+        app:itemTextColor="@color/menu_nav_item_text_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation_view"
+        app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
